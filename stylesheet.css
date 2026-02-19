@@ -1,0 +1,38 @@
+.im-fell-french-canon-sc-regular {
+  font-family: "IM Fell French Canon SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "IM Fell French Canon SC";
+  background-color: rgb(0, 255, 51);
+}
+
+.text {
+  position: fixed;
+  color: #0800a5;
+  font-size: 150px;
+  white-space: nowrap;
+  animation:
+    x-axis 2.3s infinite alternate linear,
+    y-axis 3.1s infinite alternate linear;
+}
+
+@keyframes x-axis {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: calc(100vw - 10vw);
+  }
+}
+
+@keyframes y-axis {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: calc(100vh - 10vw);
+  }
+}
