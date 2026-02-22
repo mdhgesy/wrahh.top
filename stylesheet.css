@@ -9,23 +9,12 @@ body {
   background-color: rgb(0, 255, 51);
 }
 
-.text {
+.filmik {
   position: fixed;
   color: #0800a5;
   font-size: 150px;
   white-space: nowrap;
-  animation:
-    x-axis 2.3s infinite alternate linear,
-    y-axis 3.1s infinite alternate linear;
-}
-
-@keyframes x-axis {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: calc(100vw - 10vw);
-  }
+  animation: y-axis 5s infinite alternate linear;
 }
 
 @keyframes y-axis {
@@ -33,6 +22,31 @@ body {
     top: 0;
   }
   100% {
-    top: calc(100vh - 10vw);
+    top: calc(80vh);
+  }
+}
+
+.rengor {
+  background: linear-gradient(90deg, #ff007f, #7f00ff, #00d4ff, #ff007f);
+
+  background-size: 300% 100%;
+
+  background-clip: text;
+  color: transparent;
+
+  animation: gradientFlow 5s linear infinite;
+
+  font-size: 4rem;
+  font-weight: bold;
+  padding-left: 6em;
+  font-size: 6em;
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
   }
 }
